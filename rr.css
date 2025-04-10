@@ -1,0 +1,250 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  height: 200vh;
+  width: 1350px;
+}
+
+.container .left_container {
+  /* background-color: rgb(255, 255, 255); */
+  width: 440px;
+  border: 1px solid rgba(211, 211, 211, 0.774);
+}
+
+.chats {
+  padding-left: 20px;
+  padding-top: 15px;
+  font-family: verdana;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .left_container .chats .icons {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  gap: 10px;
+}
+
+.container .left_container .chats .icons .chat:active {
+  background-color: rgb(128 128 128 / 48%);
+  border-radius: 35px;
+}
+
+.container .left_container .chats .icons .menu:active {
+  background-color: rgb(128 128 128 / 48%);
+  border-radius: 20px;
+}
+
+.container .left_container .search {
+  background-color: rgba(211, 211, 211, 0.774);
+  padding: 8px;
+  display: flex;
+  width: 90%;
+  border-radius: 40px;
+  margin: 10px;
+}
+
+.container .left_container .search .input {
+  background-color: rgba(211, 211, 211, 0.774);
+  border-style: none;
+  width: 100%;
+  border-radius: 40px;
+  outline: none;
+}
+.container .left_container .search .material-icons {
+  border-radius: 40px;
+}
+
+.container .left_container .user_container {
+  /* display: flex;
+  flex-direction: column; */
+  height: -webkit-fill-available;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 440px;
+}
+
+.container .left_container .user_container :hover {
+  background-color: rgb(128 128 128 / 48%);
+  box-shadow: 0px 4px 8px rgb(128 128 128 / 48%);
+}
+
+/* .container .left_container .user_container ::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.container .left_container .user_container ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.container .left_container .user_container ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+} */
+
+.container .left_container .user_container .list {
+  /* display: flex; */
+  /* align-items: center; */
+  border-top: 1px solid rgb(128 128 128 / 48%);
+  border-bottom: 1px solid rgb(128 128 128 / 48%);
+  /* gap: 1px; */
+  height: 70px;
+  width: 419px;
+}
+
+.container .left_container .user_container .list .information .img-container {
+  margin-right: 10px;
+}
+
+.container
+  .left_container
+  .user_container
+  .list
+  .information
+  .img-container
+  .img1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: -1.5px 0px -8px;
+}
+
+.container .left_container .user_container .list .information {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 419px;
+  justify-content: space-between;
+}
+.container .left_container .user_container .list .information .N-C {
+  margin-right: auto;
+  line-height: 6px; /* 
+  عشان اقلل الفراغ بين الاسطر */
+}
+
+.container .left_container .user_container .list .information .T-N {
+  line-height: 6px; /* 
+  عشان اقلل الفراغ بين الاسطر */
+}
+
+.container
+  .left_container
+  .user_container
+  .list
+  .information
+  .T-N
+  .notification {
+  background-color: #54f754;
+  width: 20px;
+  border-radius: 50px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .right_container {
+  width: 1240px;
+  border: 1px solid rgba(211, 211, 211, 0.774);
+  background-image: url("C:/Users/USER/Desktop/edit-task/background.png");
+  height: fit-content;
+}
+
+.container .right_container .information-chat {
+  width: 100%;
+  height: 70px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container .right_container .information-chat .img-hasan .img2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: -1.5px 0px -8px;
+}
+
+.container .right_container .information-chat .icon-chat {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container .right_container .chatbox {
+  width: 100%;
+  height: 100%;
+  margin: 11px;
+}
+
+.container .right_container .chatbox .hasan-massage {
+  width: fit-content;
+  background-color: #dcf8c6;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.container .right_container .chatbox .my-massage {
+  width: fit-content;
+  background-color: #dcf8c6;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.container .right_container .chatbox .massage p {
+  font-size: 15px;
+}
+/* .container .right_container .chatbox .massage p {
+  font-size: 20px;
+} */
+
+.container .right_container .chatbox .massage p span {
+  font-size: 12px;
+  display: flex;
+  justify-content: end;
+}
+/* .container .right_container .chatbox .massage p span {
+  font-size: 10px;
+} */
+
+.container .right_container .keyboard {
+  width: 100%;
+  height: 70px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container .right_container .keyboard .send-massage {
+  border-style: none;
+  margin-top: 10px;
+  outline: none;
+}
+
+.container .right_container .keyboard .mic {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.container .right_container .keyboard .text-box {
+  width: 800px;
+  background: white;
+  height: 40px;
+  border-radius: 8px;
+}
